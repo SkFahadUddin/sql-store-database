@@ -190,7 +190,7 @@ LIMIT 5;
 -- Show all customers who signed up in the last six months of your data.
 
 SELECT * FROM customers
-WHERE signup_date > 25-05-2026;
+WHERE signup_date >= '25-05-2026';
 
 --  Find products in two named categories using IN.
 
@@ -210,7 +210,7 @@ WHERE order_status != "cancelled";
 -- List products sorted by category, then by price from high to low.
 
 SELECT * FROM products
-ORDER BY category,price ASC; 
+ORDER BY category,price DESC; 
 
 -- Count the customers.
 
